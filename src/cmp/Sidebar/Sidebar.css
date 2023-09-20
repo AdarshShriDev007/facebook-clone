@@ -1,0 +1,19 @@
+.sidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: sticky;
+    top: 60px;
+    padding: 20px 15px;
+}
+
+.sidebar::-webkit-scrollbar {
+    width: 8px; 
+  }
+
+  .sidebar::-webkit-scrollbar-thumb {
+    background-color: #BCC0C4; 
+    border-radius: 6px; 
+  }
