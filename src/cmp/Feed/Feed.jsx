@@ -6,13 +6,17 @@ import FeedPost from './FeedPost/FeedPost';
 
 function Feed() {
   return (
-    <div className='feed'>
+    <div className='feed' >
         <FeedStory />
 
-        <div style={{margin:"0px 50px"}}>
+       
+          
+          <div style={{margin:"0px 80px"}}>
           <FeedSender />
           <FeedPost />
-        </div>
+          </div>
+          
+        
         
     </div>
   )

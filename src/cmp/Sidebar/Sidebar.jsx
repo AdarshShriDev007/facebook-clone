@@ -14,7 +14,6 @@ function Sidebar() {
         <SidebarOptions title="Memories" src="https://cdn-icons-png.flaticon.com/128/11820/11820135.png" />
         <SidebarOptions title="Saved" src="https://cdn-icons-png.flaticon.com/128/11820/11820237.png" />
         <SidebarOptions title="Pages" src="https://cdn-icons-png.flaticon.com/128/11820/11820184.png" />
-        <SidebarOptions title="Events" src="https://cdn-icons-png.flaticon.com/128/9356/9356266.png" />
         <SidebarOptions title="Messanger" src="https://cdn-icons-png.flaticon.com/128/3670/3670042.png" />
         <SidebarOptions title="See More" src="https://cdn-icons-png.flaticon.com/128/10009/10009087.png" />
     </div>

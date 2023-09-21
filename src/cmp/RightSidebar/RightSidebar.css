@@ -1,0 +1,58 @@
+.rightSidebar{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: sticky;
+    top: 60px;
+    padding: 15px 0px 15px 5px;
+    height: 100vh;
+}
+
+.rightSidebar::-webkit-scrollbar {
+    width: 8px; 
+  }
+
+  .rightSidebar::-webkit-scrollbar-thumb {
+    background-color: #BCC0C4; 
+    border-radius: 6px; 
+  }
+
+.rightSidebar-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.rightSidebar-header svg{
+    font-size: 20px;
+}
+
+.rightSidebar-header span{
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.rightSidebar-options{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .rightSidebar-options:hover{
+    background-color: #E4E6E9;
+    cursor: pointer;
+  }
+
+  .rightSidebar-options .MuiAvatar-root{
+    width:28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+
+  .rightSidebar-options span{
+    font-size: 15px;
+    font-weight: 600;
+  }
