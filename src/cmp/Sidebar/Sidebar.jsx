@@ -1,11 +1,15 @@
 import React from 'react';
 import "./Sidebar.css";
 import SidebarOptions from './SidebarOptions/SidebarOptions';
+import {useUser} from "../../contextApi/User";
 
 function Sidebar() {
+
+  const {user} = useUser();
+
   return (
     <div className='sidebar'>
-        <SidebarOptions title="Adarsh Kumar" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&usqp=CAU" />
+        <SidebarOptions title={user.displayName} src={user.photoURL} />
         <SidebarOptions title="Friends" src="https://cdn-icons-png.flaticon.com/128/11820/11820085.png" />
         <SidebarOptions title="Feeds" src="https://cdn-icons-png.flaticon.com/128/11820/11820058.png" />
         <SidebarOptions title="Groups" src="https://cdn-icons-png.flaticon.com/128/11820/11820089.png" />

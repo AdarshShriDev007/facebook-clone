@@ -2,8 +2,13 @@ import { Apps, Chat, Groups, Home, Notifications, People, Search } from '@mui/ic
 import React from 'react';
 import "./Header.css";
 import { Avatar, IconButton } from '@mui/material';
+import {auth, signOut} from "../../firebase";
+import { useUser } from "../../contextApi/User";
 
 function Header() {
+
+    const {user} = useUser();
+
   return (
     <div className='header'>
         <div className='header-left'>
@@ -31,8 +36,8 @@ function Header() {
             <Apps />
             <Chat style={{padding:"10px"}} />
             <Notifications style={{padding:"10px"}} />
-           
-            <Avatar src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&usqp=CAU' />
+        
+            <Avatar title="Logout" style={{cursor:"pointer"}} onClick={()=>signOut(auth)} src={user.photoURL} />
            
                 
         </div>
