@@ -4,16 +4,15 @@ import React, { useState } from 'react';
 
 const FeedSender = () => {
 
-    const [open,setOpen] = useState(true);
+    const [open,setOpen] = useState(false);
    
-
   return (
     <>
-        <Modal open={open}>
+        <Modal open={open} onClose={()=>setOpen(false)}>
             <div className='modal-popup'>
                 <div className="modal-header">
                     <span>Create post</span>
-                    <IconButton>
+                    <IconButton onClick={()=>setOpen(false)}>
                         <Close />
                     </IconButton>
                 </div>
@@ -52,7 +51,7 @@ const FeedSender = () => {
             <div className='feedSender-form'>
                 <Avatar />
                 <form>
-                    <input type='text' placeholder="What's on your mind, Adarsh?" />
+                    <input onClick={()=>setOpen(true)} type='text' placeholder="What's on your mind, Adarsh?" />
                 </form>
             </div>
 
