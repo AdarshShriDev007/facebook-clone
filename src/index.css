@@ -22,9 +22,7 @@ code {
 
 .App-grid{
   display: grid;
-  grid-template-columns: 30% auto 30%;
-  overflow: hidden;
-  height: 100vh;
+  grid-template-columns: 300px auto 300px;
 }
 
 

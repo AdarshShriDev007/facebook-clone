@@ -1,3 +1,4 @@
+import Feed from "./cmp/Feed/Feed";
 import Header from "./cmp/Header/Header";
 import Sidebar from "./cmp/Sidebar/Sidebar";
 
@@ -8,6 +9,7 @@ function App() {
 
       <div className="App-grid">
         <Sidebar />
+        <Feed />
       </div>
     </div>
   );

@@ -6,7 +6,8 @@
     overflow-y: auto;
     position: sticky;
     top: 60px;
-    padding: 20px 15px;
+    padding: 15px 0px 15px 5px;
+    height: 100vh;
 }
 
 .sidebar::-webkit-scrollbar {
@@ -16,4 +17,27 @@
   .sidebar::-webkit-scrollbar-thumb {
     background-color: #BCC0C4; 
     border-radius: 6px; 
+  }
+
+  .sidebarOptions{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border-radius: 10px;
+  }
+
+  .sidebarOptions:hover{
+    background-color: #E4E6E9;
+    cursor: pointer;
+  }
+
+  .sidebarOptions .MuiAvatar-root{
+    width:28px;
+    height: 28px;
+    margin-right: 10px;
+  }
+
+  .sidebarOptions span{
+    font-size: 15px;
+    font-weight: 600;
   }

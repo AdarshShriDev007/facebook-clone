@@ -1,0 +1,195 @@
+.feed{
+    display: flex;
+    flex-direction: column;
+    margin: 30px 80px;
+}
+
+.feedStory{
+    display: flex;
+    align-items: center;
+}
+
+.story{
+    width: 140px;
+    height: 240px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0px 5px;
+    border-radius: 10px;
+    padding: 10px;
+    position: relative;
+    transition: all 0.2 linear 0s;
+    box-shadow: 0px 5px 17px -7px rgb(0,0,0,0.75);
+}
+
+.story:hover{
+    transform: scale(1.07);
+    cursor: pointer;
+}
+
+.story span{
+    position: absolute;
+    bottom: 10px;
+    left: 10;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.story .MuiAvatar-root{
+    border: 3px solid #0766FF;
+}
+
+
+.feedSender{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 1px 0px #ccc;
+}
+
+.feedSender-form{
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.feedSender-form form{
+    margin-left: 10px;
+    background-color: #F0F2F5;
+    flex: 1;
+    border-radius: 50px;
+}
+
+.feedSender-form form input{
+    width: 100%;
+    padding: 12px;
+    background: transparent;
+    border-radius: 50px;
+    font-size: 16px;
+    border: 0;
+    outline: 0;
+}
+
+.feedSender-icons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 10px;
+}
+
+.feedSender-icons-option{
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    border-radius: 10px;
+}
+
+.feedSender-icons-option:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+.feedSender-icons-option svg{
+    font-size: 30px;
+}
+
+.feedSender-icons-option span{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+
+.feedPost{
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    border-radius: 10px;
+    margin: 20px 0px;
+    box-shadow: 0px 1px 1px 0px #ccc;
+}
+
+.feedPost-header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.feedPost-header-left{
+    display: flex;
+    align-items: center;
+}
+
+.feedPost-header-left-info{
+    display: flex;
+    flex-direction: column;
+    margin-left: 10px;
+}
+
+.feedPost-header-left-info span:last-child{
+    display: flex;
+    align-items: center;
+    font-size: 11px;
+}
+
+.feedPost-header-left-info span svg{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.feedPost-header-left-info span:first-child{
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.feedPost-body{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+.feedPost-body img{
+    width: 100%;
+}
+
+.feedPost-text{
+    padding: 10px;
+}
+
+.feedPost-footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-bottom: 10px;
+}
+
+.feedPost-footer-options{
+    display: flex;
+    align-items: center;
+    padding: 5px 30px;
+    border-radius: 5px;
+}
+
+.feedPost-footer-options:hover{
+    cursor: pointer;
+    background-color: #F2F2F2;
+}
+
+.feedPost-footer-options svg{
+    color: #5B626A;
+}
+
+.feedPost-footer-options span{
+    font-size: 15px;
+    font-weight: 600;
+    margin-left: 10px;
+}
