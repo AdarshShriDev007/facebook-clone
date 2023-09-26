@@ -24,12 +24,12 @@ import {
 } from "firebase/storage";
 
 const firebaseConfig = {
-  apiKey: "AIzaSyBjxiuPodAGgi12I_vHj0acbt11aDSvNEE",
-  authDomain: "facebook-clone-f5ea7.firebaseapp.com",
-  projectId: "facebook-clone-f5ea7",
-  storageBucket: "facebook-clone-f5ea7.appspot.com",
-  messagingSenderId: "692637034594",
-  appId: "1:692637034594:web:8e04fb784611dcd754493b"
+  apiKey: "AIzaSyAUY2rCPJXpP-Zyk0mRcAzWbPhiL4mvX_w",
+  authDomain: "facebook-clone-be90a.firebaseapp.com",
+  projectId: "facebook-clone-be90a",
+  storageBucket: "facebook-clone-be90a.appspot.com",
+  messagingSenderId: "102136832449",
+  appId: "1:102136832449:web:08cd362caade5ffcaa8f40"
 };
 
 const app = initializeApp(firebaseConfig);
